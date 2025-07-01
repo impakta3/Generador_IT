@@ -419,7 +419,7 @@ if st.button("📥 Generar Informe Excel"):
         if st.session_state.lista_piezas:
             for i, pieza in enumerate(st.session_state.lista_piezas):
                 row_idx = start_row + i
-                if row_idx > 24:  # Límite de filas
+                if row_idx > 34:  # Límite de filas
                     break
                 ws[f"O{row_idx}"] = pieza["codigo"]
                 ws[f"P{row_idx}"] = pieza["nombre"]
